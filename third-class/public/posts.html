@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Devspark Test App</title>
+    <script src="js/lib/angular/angular.min.js"></script>
+</head>
+<body ng-app="testApp">
+    <div ng-controller="postsController">
+        <h1>{{title}}</h1>
+        <fieldset>
+            <input ng-value="title" type="text"placeholder="Enter text here" ng-model="inputText">
+            <input type="button" ng-click="addText(inputText)" value="Submit">
+        </fieldset>
+        <ul>
+            <li ng-repeat="dataInput in data track by $index" class="">
+                <div class="clearfix">
+                    <div class="score-container pull-left">
+                        <i ng-click ="increaseScore(dataInput)" class="glyphicon glyphicon-thumbs-up"></i>
+                        <p class="input-score">{{dataInput.score}}</p>
+                        <i ng-click ="decreaseScore(dataInput)" class="glyphicon glyphicon-thumbs-down"></i>
+                    </div>
+                    <i ng-click ="removeText(dataInput)"class="glyphicon glyphicon-remove pull-right remove-item-icon"></i>
+                </div>
+                <p class="input-text" title="{{dataInput.text}}">{{dataInput.text}}</p>
+            </li>
+        </ul>
+    </div>
+<script src="js/scripts/main.js"></script>
+</body>
+</html>
