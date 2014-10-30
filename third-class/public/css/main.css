@@ -1,0 +1,51 @@
+.app-form {
+	margin: 2% auto;
+	width: 50%;
+	padding: 1% 2%;
+	background-color: white;
+	-webkit-box-shadow: 2px 2px 15px 0 rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 15px 0 rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 15px 0 rgba(50, 50, 50, 0.75);
+}
+
+.main-title {
+	text-align: center;
+	margin-bottom: 8%;
+}
+
+.app-form .btn {
+	display: block;
+	margin: 5% auto;
+}
+
+.app-form i {
+	cursor: pointer;
+}
+
+.data-list li {
+	margin-bottom: 5%;
+	border-bottom: 1px solid silver;
+}
+
+.remove-item-icon {
+	margin-top: 3%;
+	font-size: 2em;
+	color: darkred;
+}
+
+.input-text {
+	font-size: 2em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 1%;
+}
+
+.score-container i {
+	font-size: 1.2em;
+}
+
+.input-score {
+	font-size: 1.5em;
+	margin-bottom: 3px;
+}
