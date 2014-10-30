@@ -25,9 +25,7 @@ router.post('/user', function (req, res) {
   persistence.save(req.body).then(function () {
       res.send({msg: "User saved successfully"});
     }, function (err) {
-      if (err) {
-        res.status(500).send({error: "Error saving user: " + err});
-      }
+      res.status(500).send({error: "Error saving user: " + err});
     })
 });
 

@@ -22,7 +22,7 @@ var loadUsers = function () {
     return User.find().exec();
 }
 
-var updateUser = function(id, user, callback) {
+var updateUser = function(id, user) {
     User.findById(id).exec().then(function (u) {
         u.name = user.name;
         return u.save().exec();

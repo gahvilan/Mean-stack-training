@@ -26,6 +26,7 @@ var updateUser = function(id, user, callback) {
     User.findById(id, function (err, u) {
         if (err) {
             callback(err, null);
+            return;
         }
         u.name = user.name;
         u.save(callback);
