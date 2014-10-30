@@ -1,6 +1,6 @@
 var app = angular.module('sampleApp',[]);
 
-app.controller('postsController', function($scope) {
+app.controller('postsController', ['$scope', function($scope) {
     $scope.title = 'Devspark Test App';
     $scope.data = [];
 
@@ -25,4 +25,5 @@ app.controller('postsController', function($scope) {
             dataInput.score--;
         }
     };
-});
+
+}]);
