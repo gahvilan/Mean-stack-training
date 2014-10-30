@@ -1,0 +1,9 @@
+    <div class="app-form">
+        <h1 class="main-title">Sample app</h1>
+        <div ng-include="'views/user-form.html'"></div>
+        <ul class="data-list list-unstyled">
+            <li ng-repeat="user in users track by $index" class="clearfix">
+                <p class="input-text"><a href="#/user/{{user.id}}">{{user.name | substring:5}}</a></p>
+            </li>
+        </ul>
+    </div>
